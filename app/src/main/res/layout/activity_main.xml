@@ -51,171 +51,227 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input1"
-        android:layout_width="302dp"
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/noun"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input2"
-        android:layout_width="302dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/noun"
         android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input1">
+        app:layout_constraintTop_toBottomOf="@+id/author" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/noun"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input3"
-        android:layout_width="302dp"
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain"
         android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/view1"
+        app:layout_constraintStart_toEndOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/noun"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input2">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/noun"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@id/view1" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input4"
-        android:layout_width="302dp"
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain"
         android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/view2"
+        app:layout_constraintStart_toEndOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/noun"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input3">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/adjective"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@id/view2" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input5"
-        android:layout_width="302dp"
+    <EditText
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain"
         android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/view3"
+        app:layout_constraintStart_toEndOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/adjective"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input4">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/verb"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@id/view3" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input6"
-        android:layout_width="302dp"
+    <EditText
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain"
         android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/view4"
+        app:layout_constraintStart_toEndOf="@id/view4" />
+
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/verb"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input5">
+        app:layout_constraintTop_toBottomOf="@id/view4" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/adjective"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input7"
-        android:layout_width="302dp"
+    <EditText
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain"
         android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/view5"
+        app:layout_constraintStart_toEndOf="@id/view5" />
+
+    <TextView
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/adjective"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input6">
+        app:layout_constraintTop_toBottomOf="@id/view5" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/adjective"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input8"
-        android:layout_width="302dp"
+    <EditText
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain"
         android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/view6"
+        app:layout_constraintStart_toEndOf="@id/view6" />
+
+
+    <TextView
+        android:id="@+id/view7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/adjective"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input7">
+        app:layout_constraintTop_toBottomOf="@id/view6" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/verb"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/view7"
+        app:layout_constraintStart_toEndOf="@id/view7" />
+
+
+    <TextView
+        android:id="@+id/view8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/verb"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view7" />
+
+
+    <EditText
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/view8"
+        app:layout_constraintStart_toEndOf="@id/view8" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="170dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="170dp"
         android:onClick="createMadLib"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input8"
+        app:layout_constraintTop_toBottomOf="@+id/text8"
         app:srcCompat="@drawable/madlibs" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

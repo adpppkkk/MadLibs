@@ -5,7 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
-import android.widget.TextView
+
+val player = "player"
+val word_1 = "word_1"
+val word_2 = "word_2"
+val word_3 = "word_3"
+val word_4 = "word_4"
+val word_5 = "word_5"
+val word_6 = "word_6"
+val word_7 = "word_7"
+val word_8 = "word_8"
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,39 +23,30 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    val player = "player"
-    val word1 = "word"
-    val word2 = "word"
-    val word3 = "word"
-    val word4 = "word"
-    val word5 = "word"
-    val word6 = "word"
-    val word7 = "word"
-    val word8 = "word"
 
 
 
     fun createMadLib(view: View) {
         val playerName = findViewById<EditText>(R.id.player).text.toString()
         val input1 = findViewById<EditText>(R.id.text1).text.toString()
-        val input2 = findViewById<TextView>(R.id.text2).text.toString()
-        val input3 = findViewById<TextView>(R.id.text3).text.toString()
-        val input4 = findViewById<TextView>(R.id.text4).text.toString()
-        val input5 = findViewById<TextView>(R.id.text5).text.toString()
-        val input6 = findViewById<TextView>(R.id.text6).text.toString()
-        val input7 = findViewById<TextView>(R.id.text7).text.toString()
-        val input8 = findViewById<TextView>(R.id.text8).text.toString()
+        val input2 = findViewById<EditText>(R.id.text2).text.toString()
+        val input3 = findViewById<EditText>(R.id.text3).text.toString()
+        val input4 = findViewById<EditText>(R.id.text4).text.toString()
+        val input5 = findViewById<EditText>(R.id.text5).text.toString()
+        val input6 = findViewById<EditText>(R.id.text6).text.toString()
+        val input7 = findViewById<EditText>(R.id.text7).text.toString()
+        val input8 = findViewById<EditText>(R.id.text8).text.toString()
 
         val intent = Intent(this,libpage::class.java).apply {
             putExtra(player, playerName)
-            putExtra(word1, input1)
-            putExtra(word2, input2)
-            putExtra(word3, input3)
-            putExtra(word4, input4)
-            putExtra(word5, input5)
-            putExtra(word6, input6)
-            putExtra(word7, input7)
-            putExtra(word8, input8)
+            putExtra(word_1, input1)
+            putExtra(word_2, input2)
+            putExtra(word_3, input3)
+            putExtra(word_4, input4)
+            putExtra(word_5, input5)
+            putExtra(word_6, input6)
+            putExtra(word_7, input7)
+            putExtra(word_8, input8)
 
         }
         startActivity(intent)
